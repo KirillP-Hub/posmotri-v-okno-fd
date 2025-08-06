@@ -60,7 +60,6 @@ ol {
 
 .result__video-container {
   position: relative;
-  flex-direction: column;
   max-width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -79,7 +78,7 @@ ol {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  gap: 16px;
+  gap: 40px;
 }
 
 .search-form__fieldset {
@@ -93,6 +92,7 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   width: fit-content;
   margin-top: 5px;
   cursor: pointer;
@@ -142,7 +142,7 @@ ol {
   align-items: center;
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
   cursor: pointer;
 }
 
@@ -160,6 +160,35 @@ ol {
 
 .search-form__label-text {
   margin: 0px 3px 0px;
+}
+
+.button {
+  border: 1px solid #fff;
+  height: 34px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: 1px underline #fff;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
@@ -181,7 +210,6 @@ ol {
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
-  color: #fff;
   text-transform: uppercase;
 }
 
@@ -190,18 +218,15 @@ ol {
 }
 
 .content__list-container {
-  display: grid;
   position: relative;
   max-width: 399px;
   block-size: 298px;
   overflow: auto;
-  overflow-x: hidden;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   gap: 30px;
 }
 
@@ -247,7 +272,7 @@ ol {
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
-  min-width: 194px;
+  width: 194px;
   height: 103px;
 }
 
@@ -279,40 +304,10 @@ ol {
   outline-offset: 1px;
 }
 
-/* Cтили и состояние кнопок */
 .more-button {
   width: 390px;
   height: 34px;
   margin-top: 30px;
-}
-
-.button {
-  border: 1px solid #fff;
-  height: 34px;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  cursor: pointer;
-  color: #fff;
-  background-color: transparent;
-}
-
-.button:active {
-  background-color: #545050;
-}
-
-.button:hover {
-  text-decoration: 1px underline #fff;
-}
-
-.button:focus {
-  outline: none;
-}
-
-.button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
 }
 
 /* Кастомный скроллбар */
